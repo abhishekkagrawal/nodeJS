@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+                var firstName = document.getElementById("txtFirstName").value;
+                var lastName = document.getElementById("txtLastName").value;
+                console.log(firstName);
+                if(firstName == ''){
+                    alert("Please enter your First Name");
+                }
+                if(lastName == ''){
+                    alert("Please enter your Last Name");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Enter your First Name:
+                </td>
+                <td>
+                    <input type="text" id="txtFirstName"/>
+                </td>
+                <td>
+                    Enter your Last Name:
+                </td>
+                <td>
+                    <input type="text" id="txtLastName"/>
+                </td>
+                <td>
+                    <input type="submit" onclick="validate()" >
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

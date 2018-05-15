@@ -1,0 +1,27 @@
+Client side scripting is advantageous as it reduces round trips to the server and also saves servers processing time
+
+JavaScript has two types of variable scopes. One is global and second one is function. 
+
+NodeJs comes into picture when we want to extent javascript capabilities on server side .Just like the way we have .net clr for web api to work ,node js is another runtime environment to work with real time application ie for getting data from other sources 
+
+ES6 is partially support by browsers
+
+The module design pattern in Javascript creates encapsulation of our code. 
+
+IIFE runs only once, after its execution we can not call it again.
+
+We can run NodeJS on Various platforms like Windows, Linux, Unix etc
+
+Hoisting is JavaScript's default behavior of moving all declarations to the top  
+
+A callback function is a function that is passed to another function as a parameter, and that callback function is executed inside the otherFunction. 
+
+Module design pattern provide functionality with private variable which can only be accessed by function defined inside of your specific fucntion 
+
+
+Express Framework is actively used to develop application using NodeJS 
+
+To become MEAN developer , Developer should knows Mango , Express , Angular and Nodejs
+
+All the MEAN uses JavaScript
+All the MEAN stack are Open Source.

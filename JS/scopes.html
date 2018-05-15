@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script>
+        var x = 10;
+        console.log("X is " + x);
+        function hello() {
+            //Local variable x
+            x = 20;
+            console.log("X is " + x);
+
+            {
+                var x = 50;
+                console.log("X is " + x);
+            }
+
+            console.log("X is " + x);
+
+            var x = 30;
+            console.log("X is " + x);
+        }
+        hello();
+        console.log("X is " + x);
+
+        //Variable declaration are hoisted
+
+        var a = 10;
+        console.log("a is " + a);
+        function test() {            
+            //Variable declaration are hoisted
+            a = 20;
+            console.log("a is " + a);
+
+            a = 30;
+            console.log("a is " + a);
+        }
+        test();
+        console.log("a is " + a);
+
+        var b = 10;
+        console.log("b is " + b);
+        function example() {            
+            //Variable declaration are hoisted
+            b = 20;
+            console.log("b is " + b);
+
+            var b = 30;
+            console.log("b is " + b);
+        }
+        example();
+        console.log("b is " + b);
+
+    </script>
+</head>
+
+<body>
+    Global &amp; Functional Scope
+</body>
+
+</html>

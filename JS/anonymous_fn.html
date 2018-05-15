@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            var x = 10;
+            console.log("X is "+x);
+
+            function hello(){
+                console.log("Hello World");
+            }
+            hello();
+            // Ananymous function
+            var f = function (){
+                console.log("Hello World, from variable f");
+            }
+            f();
+
+            function test(p){
+                console.log("Inside test function:"+p);
+                //Callback function
+                p();
+            }
+            //test(10);
+            test(f);
+
+            test(
+                function () {
+                   console.log("Directly passed!");     
+                }
+            );
+            
+        </script>
+    </head>
+    <body>
+        Ananymous &amp; Callback function
+    </body>
+</html>

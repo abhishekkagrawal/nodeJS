@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script>
+
+            //Immediately Invoked function expression
+
+            (function (){
+                console.log("Hello");
+            })();
+
+            // var x = (function (){
+            //     console.log("Hello");
+            // })();
+
+            // x();
+
+            var y = (function (){
+                console.log("Hello");
+                return 1;
+            })();
+
+            console.log(y);
+
+            var z = (function (){
+                console.log("Hello");
+                return function(){
+                    console.log("Inner function");
+                };
+            })();
+
+            console.log(z);
+
+//Module Design Pattern
+            var k = (function (){
+                var count=0;
+                console.log("Hello");
+                return function() //Closure
+                {
+                    console.log("Inner function "+count++);
+                    //If below line is not added it will return UNDEFINDED
+                    return "Inner Function returned";
+                };
+            })();
+
+            console.log(k());
+            console.log(k());
+            console.log(k());
+            
+        </script>
+    </head>
+    <body>
+        IIFE, Module Design Patter / Closure
+    </body>
+</html>
